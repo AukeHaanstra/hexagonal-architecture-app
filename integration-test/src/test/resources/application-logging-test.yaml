@@ -1,0 +1,31 @@
+spring:
+  config:
+    activate:
+      on-profile: debug-logging
+
+logging:
+  level:
+    root: info
+    nl.pancompany.clean.architecture: debug
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: info-logging
+
+logging:
+  level:
+    root: info
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: warn-logging
+
+logging:
+  level:
+    root: warn

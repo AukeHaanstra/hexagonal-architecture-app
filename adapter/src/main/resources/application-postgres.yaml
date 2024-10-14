@@ -1,0 +1,32 @@
+spring:
+  jpa:
+    show-sql: false
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: default-postgres
+  datasource:
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local-postgres
+  datasource:
+    url: "jdbc:postgresql://localhost:${postgres.port}/demo"
+    username: "demo"
+    # Prevent "PSQLException: FATAL: sorry, too many clients already" when running too many integration tests
+    type: org.springframework.jdbc.datasource.SimpleDriverDataSource
+
+postgres:
+  port: 5432

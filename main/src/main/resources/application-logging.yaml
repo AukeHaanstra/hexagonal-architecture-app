@@ -1,0 +1,19 @@
+spring:
+  config:
+    activate:
+      on-profile: default-logging
+
+logging:
+  level:
+    nl.pancompany.clean.architecture.*: ${DEFAULT_LOGGING_LEVEL}
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: demo-logging
+
+logging:
+  level:
+    nl.pancompany.clean.architecture.*: debug

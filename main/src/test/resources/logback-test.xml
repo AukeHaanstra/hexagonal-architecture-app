@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="logback-spring.xml" />
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="com.tngtech.archunit" level="WARN"/>
+
+    <logger name="org.eclipse.jetty" level="WARN"/>
+    <logger name="nl.pancompany.clean.architecture.it.support.testcontainers" level="WARN"/>
+    <logger name="org.testcontainers" level="WARN"/>
+    <logger name="tc" level="WARN"/>
+    <logger name="com.github.dockerjava" level="WARN"/>
+    <logger name="com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.wire" level="OFF"/>
+</configuration>

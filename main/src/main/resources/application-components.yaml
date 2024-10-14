@@ -1,0 +1,33 @@
+# Plug-in configuration file for pluggable components (@PluggableComponent) and pluggable root components
+# (@PluggableRootComponent, i.e. beans annotated with @Adapter or @Orchestration).
+# A root component is a component in the root of a clean-architecture base package, i.e. mostly adapter components.
+#
+# The (bean) name of a {@link PluggableRootComponent} in an application layer can best be held similar to its layer name.
+# Here, an application layer may either be an adapter or the orchestration layer.
+#
+# Also see: component-configuratie.md
+#
+# Format:
+#
+# plug-in:
+#   configuraton:
+#     <Spring profile-1>:
+#       - <Bean name of a to-be-enabled pluggable component (1-1)>
+#       - <Bean name of a to-be-enabled pluggable component (1-2)>
+#     <Spring profile-2>:
+#       - <Bean name of a to-be-enabled pluggable component (2-1)>
+#       - <Bean name of a to-be-enabled pluggable component (2-2)>
+
+plug-in:
+  configuration:
+    main-components:
+      - command-bericht-listener-adapter
+
+    persistence-components:
+      - dummy-repository-adapter
+
+    std-out-display-components:
+      - std-out-display-adapter
+
+    std-err-display-components:
+      - std-err-display-adapter

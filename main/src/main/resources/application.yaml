@@ -1,0 +1,86 @@
+# See https://docs.spring.io/spring-boot/reference/features/profiles.html
+# See https://docs.spring.io/spring-boot/reference/features/external-config.html
+spring:
+  profiles:
+    active: default-run
+
+    group:
+      # profile-grouping profiles, used to include profiles that activate the main application yamls that we use
+      main-includes:
+        - main
+        - logging
+        - postgres
+        - postgres-secrets
+        - components
+        - main-components
+      test-includes:
+        - test
+        - logging-test
+
+      # demo parent profile, not for running directly
+      demo-parent:
+        - demo-logging
+        - activate-properties-printer
+        - enable-persistence
+        - local-postgres
+        - persistence-components
+
+      # demo run profiles
+      demo-stdout-run:
+        - demo-parent
+        - std-out-display-components
+      demo-stderr-run:
+        - demo-parent
+        - std-err-display-components
+
+      # kubernetes run profiles
+      default-run:
+        - default-logging
+        - activate-properties-printer
+        - enable-persistence
+        - default-postgres
+        - persistence-components
+        - std-out-display-components
+
+      # integration test parent profile, not for running directly
+      local-it-test-parent:
+        - test-includes
+        - activate-properties-printer
+
+      # test run profiles
+      local-it-test-run:
+        - local-it-test-parent
+        - enable-persistence
+        - local-postgres
+        - persistence-components
+
+      local-it-test-without-persistence-run:
+        - local-it-test-parent
+
+    include: main-includes
+
+# activate component groups in application-components.yaml
+component-profiles:
+  matchers:
+    - "*-components"
+
+# activate other components individually (components annotated with @Profile("activate-<name>"))
+activate-profiles:
+  matchers:
+    - "activate-*"
+
+# enable certain technical application functionalities
+enable-profiles:
+  matchers:
+    - "enable-*"
+
+# change functional application aspects, by selecting properties groups from included yamls (see includes-profiles)
+functional-profiles:
+  matchers:
+    - "*-logging"
+    - "*-postgres"
+
+# profiles that can be used to run @SpringBoot or @SpringBootTest with
+run-profiles:
+  matchers:
+    - "*-run"

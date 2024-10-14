@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>nl.pancompany.clean.architecture</groupId>
+        <artifactId>clean-architecture-app</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>coverage</artifactId>
+    <version>${revision}</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>nl.pancompany.clean.architecture</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>nl.pancompany.clean.architecture</groupId>
+            <artifactId>domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>nl.pancompany.clean.architecture</groupId>
+            <artifactId>usecase</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>nl.pancompany.clean.architecture</groupId>
+            <artifactId>usecase-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>nl.pancompany.clean.architecture</groupId>
+            <artifactId>adapter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>nl.pancompany.clean.architecture</groupId>
+            <artifactId>main</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>nl.pancompany.clean.architecture</groupId>
+            <artifactId>integration-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report-aggregate</goal>
+                        </goals>
+                        <configuration>
+                            <dataFileIncludes>
+                                <dataFileInclude>**/jacoco.exec</dataFileInclude>
+                            </dataFileIncludes>
+                            <excludes>
+                                <exclude>nl/pancompany/clean/architecture/main/configuration/PropertiesPrinter.class
+                                </exclude>
+                            </excludes>
+                            <outputDirectory>${project.reporting.outputDirectory}/jacoco-aggregate</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

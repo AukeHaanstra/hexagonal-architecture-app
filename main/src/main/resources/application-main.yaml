@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: clean-architecture-app
+  main:
+    web-application-type: none
+    banner-mode: off
+    keep-alive: true
+  flyway:
+    default-schema: demo
