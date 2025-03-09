@@ -1,7 +1,7 @@
 package nl.pancompany.clean.architecture.it.support.fakeadapters;
 
 import lombok.RequiredArgsConstructor;
-import nl.pancompany.clean.architecture.domain.port.out.DummyDisplayPort;
+import nl.pancompany.clean.architecture.application.port.out.DummyDisplayPort;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 

@@ -2,10 +2,10 @@ package nl.pancompany.clean.architecture.main;
 
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
-import nl.pancompany.clean.architecture.domain.model.dummy.Dummy;
-import nl.pancompany.clean.architecture.domain.model.dummy.DummyId;
-import nl.pancompany.clean.architecture.domain.port.out.DummyDisplayPort;
-import nl.pancompany.clean.architecture.domain.port.out.DummyRepositoryPort;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.Dummy;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.DummyId;
+import nl.pancompany.clean.architecture.application.port.out.DummyDisplayPort;
+import nl.pancompany.clean.architecture.application.port.out.DummyRepositoryPort;
 import org.springframework.stereotype.Component;
 
 @Component

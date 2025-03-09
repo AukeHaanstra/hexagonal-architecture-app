@@ -3,10 +3,10 @@ package nl.pancompany.clean.architecture.adapter.gateway.repository.dummy.jpa;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import nl.pancompany.clean.architecture.common.annotation.architecture.Adapter;
-import nl.pancompany.clean.architecture.domain.model.dummy.Dummy;
-import nl.pancompany.clean.architecture.domain.model.dummy.DummyDto;
-import nl.pancompany.clean.architecture.domain.model.dummy.DummyId;
-import nl.pancompany.clean.architecture.domain.port.out.DummyRepositoryPort;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.Dummy;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.DummyDto;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.DummyId;
+import nl.pancompany.clean.architecture.application.port.out.DummyRepositoryPort;
 import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j

@@ -18,15 +18,11 @@
         </dependency>
         <dependency>
             <groupId>nl.pancompany.clean.architecture</groupId>
-            <artifactId>domain</artifactId>
+            <artifactId>application</artifactId>
         </dependency>
         <dependency>
             <groupId>nl.pancompany.clean.architecture</groupId>
-            <artifactId>usecase</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>nl.pancompany.clean.architecture</groupId>
-            <artifactId>usecase-test</artifactId>
+            <artifactId>application-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>

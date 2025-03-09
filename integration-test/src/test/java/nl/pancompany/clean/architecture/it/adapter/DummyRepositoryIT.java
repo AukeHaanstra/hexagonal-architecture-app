@@ -1,6 +1,6 @@
 package nl.pancompany.clean.architecture.it.adapter;
 
-import nl.pancompany.clean.architecture.domain.port.out.DummyRepositoryPort;
+import nl.pancompany.clean.architecture.application.port.out.DummyRepositoryPort;
 import nl.pancompany.clean.architecture.it.support.annotations.DummyIT;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

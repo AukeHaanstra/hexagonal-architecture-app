@@ -17,7 +17,7 @@
     <dependencies>
         <dependency>
             <groupId>nl.pancompany.clean.architecture</groupId>
-            <artifactId>usecase</artifactId>
+            <artifactId>application</artifactId>
         </dependency>
     </dependencies>
 

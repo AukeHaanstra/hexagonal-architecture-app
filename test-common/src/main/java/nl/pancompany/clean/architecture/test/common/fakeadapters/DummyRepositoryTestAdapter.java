@@ -1,9 +1,9 @@
 package nl.pancompany.clean.architecture.test.common.fakeadapters;
 
-import nl.pancompany.clean.architecture.domain.model.dummy.Dummy;
-import nl.pancompany.clean.architecture.domain.model.dummy.DummyDto;
-import nl.pancompany.clean.architecture.domain.model.dummy.DummyId;
-import nl.pancompany.clean.architecture.domain.port.out.DummyRepositoryPort;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.Dummy;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.DummyDto;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.DummyId;
+import nl.pancompany.clean.architecture.application.port.out.DummyRepositoryPort;
 
 import java.util.HashMap;
 import java.util.Map;

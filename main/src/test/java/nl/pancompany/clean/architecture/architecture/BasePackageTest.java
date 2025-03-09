@@ -4,7 +4,8 @@ import com.tngtech.archunit.core.domain.JavaClass;
 import com.tngtech.archunit.core.domain.JavaClasses;
 import com.tngtech.archunit.core.importer.ClassFileImporter;
 import com.tngtech.archunit.core.importer.ImportOption;
-import nl.pancompany.clean.architecture.common.annotation.architecture.*;
+import nl.pancompany.clean.architecture.common.annotation.architecture.Application;
+import nl.pancompany.clean.architecture.common.annotation.architecture.Main;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -17,17 +18,11 @@ class BasePackageTest {
 
     static final String ROOT_PACKAGE = "nl.pancompany.clean.architecture";
     static final String MAIN_PACKAGE = ROOT_PACKAGE + ".main";
-    static final String USECASE_PACKAGE = ROOT_PACKAGE + ".usecase";
-    static final String DOMAIN_MODEL_PACKAGE = ROOT_PACKAGE + ".domain.model";
-    static final String DOMAIN_PORT_PACKAGE = ROOT_PACKAGE + ".domain.port";
-    static final String DOMAIN_SERVICE_PACKAGE = ROOT_PACKAGE + ".domain.service";
+    static final String APPLICATION_PACKAGE = ROOT_PACKAGE + ".application";
 
     static final Map<Class<? extends Annotation>, String> packages = Map.of(
             Main.class, MAIN_PACKAGE,
-            Usecase.class, USECASE_PACKAGE,
-            DomainService.class, DOMAIN_SERVICE_PACKAGE,
-            DomainPort.class, DOMAIN_PORT_PACKAGE,
-            DomainModel.class, DOMAIN_MODEL_PACKAGE
+            Application.class, APPLICATION_PACKAGE
     );
     static final String SUBPACKAGES = "..";
 
@@ -36,7 +31,7 @@ class BasePackageTest {
             .importPackages(ROOT_PACKAGE + SUBPACKAGES);
 
     @ParameterizedTest
-    @ValueSource(classes = {DomainModel.class, DomainService.class, Main.class, Usecase.class})
+    @ValueSource(classes = {Main.class, Application.class})
     void testBasePackagesUnchanged(final Class<? extends Annotation> annotationClass) {
         final var expectedBasePackage = packages.get(annotationClass);
         final var actualBasePackage = getBasePackage(annotationClass);

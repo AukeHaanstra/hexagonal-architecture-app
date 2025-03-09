@@ -5,7 +5,6 @@ module nl.pancompany.clean.architecture.common.test {
     exports nl.pancompany.clean.architecture.test.common.extractors;
 
     requires static lombok;
-    requires nl.pancompany.clean.architecture.usecase;
-    requires nl.pancompany.clean.architecture.domain;
+    requires nl.pancompany.clean.architecture.application;
     requires nl.pancompany.clean.architecture.common;
 }

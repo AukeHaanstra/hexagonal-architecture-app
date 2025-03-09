@@ -1,9 +1,8 @@
 module nl.pancompany.clean.architecture.adapter {
 
     exports nl.pancompany.clean.architecture.adapter.controller.commandlistener.invocable;
-    requires nl.pancompany.clean.architecture.usecase;
+    requires nl.pancompany.clean.architecture.application;
     requires nl.pancompany.clean.architecture.common;
-    requires nl.pancompany.clean.architecture.domain;
 
     requires static lombok;
 

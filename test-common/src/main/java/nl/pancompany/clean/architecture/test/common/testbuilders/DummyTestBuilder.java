@@ -1,7 +1,7 @@
 package nl.pancompany.clean.architecture.test.common.testbuilders;
 
-import nl.pancompany.clean.architecture.domain.model.dummy.Dummy;
-import nl.pancompany.clean.architecture.domain.model.dummy.DummyId;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.Dummy;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.DummyId;
 import nl.pancompany.clean.architecture.test.common.TestData;
 
 public class DummyTestBuilder {

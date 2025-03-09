@@ -23,10 +23,9 @@
 
     <modules>
         <module>common</module>
-        <module>domain</module>
-        <module>usecase</module>
+        <module>application</module>
         <module>test-common</module>
-        <module>usecase-test</module>
+        <module>application-test</module>
         <module>adapter</module>
         <module>main</module>
         <module>integration-test</module>
@@ -41,12 +40,7 @@
             </dependency>
             <dependency>
                 <groupId>nl.pancompany.clean.architecture</groupId>
-                <artifactId>domain</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>nl.pancompany.clean.architecture</groupId>
-                <artifactId>usecase</artifactId>
+                <artifactId>application</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -67,12 +61,12 @@
             <!-- For JaCoCo aggregation by the coverage module: -->
             <dependency>
                 <groupId>nl.pancompany.clean.architecture</groupId>
-                <artifactId>integration-test</artifactId>
+                <artifactId>application-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>nl.pancompany.clean.architecture</groupId>
-                <artifactId>usecase-test</artifactId>
+                <artifactId>integration-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

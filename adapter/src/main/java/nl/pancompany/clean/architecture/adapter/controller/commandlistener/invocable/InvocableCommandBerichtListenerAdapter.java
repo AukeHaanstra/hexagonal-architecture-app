@@ -3,10 +3,10 @@ package nl.pancompany.clean.architecture.adapter.controller.commandlistener.invo
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import nl.pancompany.clean.architecture.common.annotation.architecture.Adapter;
-import nl.pancompany.clean.architecture.domain.model.dummy.Dummy;
-import nl.pancompany.clean.architecture.domain.model.dummy.DummyId;
-import nl.pancompany.clean.architecture.usecase.port.in.DisplayDummyUsecase;
-import nl.pancompany.clean.architecture.usecase.port.in.SaveDummyUsecase;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.Dummy;
+import nl.pancompany.clean.architecture.application.domain.model.dummy.DummyId;
+import nl.pancompany.clean.architecture.application.port.in.DisplayDummyUsecase;
+import nl.pancompany.clean.architecture.application.port.in.SaveDummyUsecase;
 
 /**
  * An incoming adapter that might listen to a queue to receive commands from it

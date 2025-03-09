@@ -1,10 +1,10 @@
 package nl.pancompany.clean.architecture.it.adapter;
 
 import nl.pancompany.clean.architecture.adapter.controller.commandlistener.invocable.InvocableCommandBerichtListenerAdapter;
-import nl.pancompany.clean.architecture.domain.port.out.DummyRepositoryPort;
+import nl.pancompany.clean.architecture.application.port.out.DummyRepositoryPort;
 import nl.pancompany.clean.architecture.it.support.annotations.DummyNoPersistenceIT;
-import nl.pancompany.clean.architecture.usecase.port.in.DisplayDummyUsecase;
-import nl.pancompany.clean.architecture.usecase.port.in.SaveDummyUsecase;
+import nl.pancompany.clean.architecture.application.port.in.DisplayDummyUsecase;
+import nl.pancompany.clean.architecture.application.port.in.SaveDummyUsecase;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
