@@ -1,7 +1,7 @@
-open module nl.pancompany.clean.architecture.application.test {
+open module nl.pancompany.hexagonal.architecture.application.test {
 
-	requires nl.pancompany.clean.architecture.application;
-	requires nl.pancompany.clean.architecture.common.test;
+	requires nl.pancompany.hexagonal.architecture.application;
+	requires nl.pancompany.hexagonal.architecture.common.test;
 
     requires static lombok;
 

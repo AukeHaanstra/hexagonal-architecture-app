@@ -1,6 +1,6 @@
-module nl.pancompany.clean.architecture.common {
+module nl.pancompany.hexagonal.architecture.common {
 
-    exports nl.pancompany.clean.architecture.common.annotation.architecture;
+    exports nl.pancompany.hexagonal.architecture.common.annotation.architecture;
 
     requires static lombok;
     requires static spring.core;

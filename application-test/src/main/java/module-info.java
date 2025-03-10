@@ -1,2 +1,2 @@
-module nl.pancompany.clean.architecture.application.test.main {
+module nl.pancompany.hexagonal.architecture.application.test.main {
 }

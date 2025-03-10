@@ -1,8 +1,8 @@
-module nl.pancompany.clean.architecture.adapter {
+module nl.pancompany.hexagonal.architecture.adapter {
 
-    exports nl.pancompany.clean.architecture.adapter.controller.commandlistener.invocable;
-    requires nl.pancompany.clean.architecture.application;
-    requires nl.pancompany.clean.architecture.common;
+    exports nl.pancompany.hexagonal.architecture.adapter.controller.commandlistener.invocable;
+    requires nl.pancompany.hexagonal.architecture.application;
+    requires nl.pancompany.hexagonal.architecture.common;
 
     requires static lombok;
 

@@ -6,7 +6,7 @@ spring:
 logging:
   level:
     root: info
-    nl.pancompany.clean.architecture: debug
+    nl.pancompany.hexagonal.architecture: debug
 
 ---
 

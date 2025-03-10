@@ -1,12 +1,12 @@
-module nl.pancompany.clean.architecture.application {
-    exports nl.pancompany.clean.architecture.application;
-    exports nl.pancompany.clean.architecture.application.domain.model.dummy;
-    exports nl.pancompany.clean.architecture.application.port.out;
-    exports nl.pancompany.clean.architecture.application.port.in;
+module nl.pancompany.hexagonal.architecture.application {
+    exports nl.pancompany.hexagonal.architecture.application;
+    exports nl.pancompany.hexagonal.architecture.application.domain.model.dummy;
+    exports nl.pancompany.hexagonal.architecture.application.port.out;
+    exports nl.pancompany.hexagonal.architecture.application.port.in;
 
     requires static lombok;
 
-    requires nl.pancompany.clean.architecture.common;
+    requires nl.pancompany.hexagonal.architecture.common;
 
     requires org.slf4j;
 }

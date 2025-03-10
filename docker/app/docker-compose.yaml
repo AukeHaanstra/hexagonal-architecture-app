@@ -9,11 +9,11 @@ services:
     ports:
       - $POSTGRESDB_LOCAL_PORT:$POSTGRESDB_DOCKER_PORT
   app:
-    image: 'clean-architecture-app:latest'
+    image: 'hexagonal-architecture-app:latest'
     build:
       context: ../..
       dockerfile: docker/app/Dockerfile
-    container_name: clean-architecture-app
+    container_name: hexagonal-architecture-app
     depends_on:
       - db
     environment:

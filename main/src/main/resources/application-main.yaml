@@ -1,6 +1,6 @@
 spring:
   application:
-    name: clean-architecture-app
+    name: hexagonal-architecture-app
   main:
     web-application-type: none
     banner-mode: off

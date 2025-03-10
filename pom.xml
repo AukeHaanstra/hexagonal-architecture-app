@@ -9,8 +9,8 @@
         <relativePath/>
     </parent>
 
-    <groupId>nl.pancompany.clean.architecture</groupId>
-    <artifactId>clean-architecture-app</artifactId>
+    <groupId>nl.pancompany.hexagonal.architecture</groupId>
+    <artifactId>hexagonal-architecture-app</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
@@ -34,38 +34,38 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>nl.pancompany.clean.architecture</groupId>
+                <groupId>nl.pancompany.hexagonal.architecture</groupId>
                 <artifactId>common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>nl.pancompany.clean.architecture</groupId>
+                <groupId>nl.pancompany.hexagonal.architecture</groupId>
                 <artifactId>application</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>nl.pancompany.clean.architecture</groupId>
+                <groupId>nl.pancompany.hexagonal.architecture</groupId>
                 <artifactId>test-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>nl.pancompany.clean.architecture</groupId>
+                <groupId>nl.pancompany.hexagonal.architecture</groupId>
                 <artifactId>adapter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>nl.pancompany.clean.architecture</groupId>
+                <groupId>nl.pancompany.hexagonal.architecture</groupId>
                 <artifactId>main</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <!-- For JaCoCo aggregation by the coverage module: -->
             <dependency>
-                <groupId>nl.pancompany.clean.architecture</groupId>
+                <groupId>nl.pancompany.hexagonal.architecture</groupId>
                 <artifactId>application-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>nl.pancompany.clean.architecture</groupId>
+                <groupId>nl.pancompany.hexagonal.architecture</groupId>
                 <artifactId>integration-test</artifactId>
                 <version>${project.version}</version>
             </dependency>

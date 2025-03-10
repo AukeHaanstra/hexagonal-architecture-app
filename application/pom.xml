@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>nl.pancompany.clean.architecture</groupId>
-        <artifactId>clean-architecture-app</artifactId>
+        <groupId>nl.pancompany.hexagonal.architecture</groupId>
+        <artifactId>hexagonal-architecture-app</artifactId>
         <version>${revision}</version>
     </parent>
 
@@ -17,7 +17,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>nl.pancompany.clean.architecture</groupId>
+            <groupId>nl.pancompany.hexagonal.architecture</groupId>
             <artifactId>common</artifactId>
         </dependency>
 

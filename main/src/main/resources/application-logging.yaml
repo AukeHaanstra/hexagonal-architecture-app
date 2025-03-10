@@ -5,7 +5,7 @@ spring:
 
 logging:
   level:
-    nl.pancompany.clean.architecture.*: ${DEFAULT_LOGGING_LEVEL}
+    nl.pancompany.hexagonal.architecture.*: ${DEFAULT_LOGGING_LEVEL}
 
 ---
 
@@ -16,4 +16,4 @@ spring:
 
 logging:
   level:
-    nl.pancompany.clean.architecture.*: debug
+    nl.pancompany.hexagonal.architecture.*: debug

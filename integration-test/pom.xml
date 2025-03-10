@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>nl.pancompany.clean.architecture</groupId>
-        <artifactId>clean-architecture-app</artifactId>
+        <groupId>nl.pancompany.hexagonal.architecture</groupId>
+        <artifactId>hexagonal-architecture-app</artifactId>
         <version>${revision}</version>
     </parent>
 
@@ -20,17 +20,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>nl.pancompany.clean.architecture</groupId>
+            <groupId>nl.pancompany.hexagonal.architecture</groupId>
             <artifactId>test-common</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>nl.pancompany.clean.architecture</groupId>
+            <groupId>nl.pancompany.hexagonal.architecture</groupId>
             <artifactId>main</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>nl.pancompany.clean.architecture</groupId>
+            <groupId>nl.pancompany.hexagonal.architecture</groupId>
             <artifactId>adapter</artifactId>
             <scope>test</scope>
         </dependency>

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t clean-architecture-app:latest -f ./Dockerfile ../..
+docker build -t hexagonal-architecture-app:latest -f ./Dockerfile ../..
