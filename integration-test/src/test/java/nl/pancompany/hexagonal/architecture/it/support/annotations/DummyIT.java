@@ -1,7 +1,7 @@
 package nl.pancompany.hexagonal.architecture.it.support.annotations;
 
 import nl.pancompany.hexagonal.architecture.it.support.fakeadapters.FakeAdapterConfiguration;
-import nl.pancompany.hexagonal.architecture.it.support.testcontainers.EnableTestcontainers;
+import nl.pancompany.hexagonal.architecture.it.support.testcontainers.TestcontainersConfiguration;
 import nl.pancompany.hexagonal.architecture.main.DummyApp;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
@@ -14,10 +14,9 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
-@EnableTestcontainers
 @SpringBootTest(classes = DummyApp.class)
 @ActiveProfiles
-@Import({FakeAdapterConfiguration.class})
+@Import({FakeAdapterConfiguration.class, TestcontainersConfiguration.class})
 public @interface DummyIT {
 
     // This way, you can override profiles on a per-test basis

@@ -7,7 +7,7 @@ import nl.pancompany.hexagonal.architecture.application.port.out.DummyRepository
 import nl.pancompany.hexagonal.architecture.it.support.annotations.DummyNoPersistenceIT;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static nl.pancompany.hexagonal.architecture.test.common.TestBuilders.dummy;
 import static nl.pancompany.hexagonal.architecture.test.common.TestData.*;
@@ -21,13 +21,13 @@ class CommandListenerIT {
     @Autowired
     InvocableCommandBerichtListenerAdapter invocableCommandBerichtListenerAdapter;
 
-    @MockBean
+    @MockitoBean
     SaveDummyUsecase saveDummyUsecase;
 
-    @MockBean
+    @MockitoBean
     DisplayDummyUsecase displayDummyUsecase;
 
-    @MockBean
+    @MockitoBean
     DummyRepositoryPort dummyRepositoryPort;
 
     @Test

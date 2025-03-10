@@ -18,15 +18,15 @@ spring:
 
 ---
 
-spring:
-  config:
-    activate:
-      on-profile: local-postgres
-  datasource:
-    url: "jdbc:postgresql://localhost:${postgres.port}/demo"
-    username: "demo"
-    # Prevent "PSQLException: FATAL: sorry, too many clients already" when running too many integration tests
-    type: org.springframework.jdbc.datasource.SimpleDriverDataSource
-
-postgres:
-  port: 5432
+#spring:
+#  config:
+#    activate:
+#      on-profile: local-postgres
+#  datasource:
+#    url: "jdbc:postgresql://localhost:${postgres.port}/demo"
+#    username: "demo"
+#    # Prevent "PSQLException: FATAL: sorry, too many clients already" when running too many integration tests
+#    type: org.springframework.jdbc.datasource.SimpleDriverDataSource
+#
+#postgres:
+#  port: 5432
